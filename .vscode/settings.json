@@ -55,22 +55,22 @@
     "*.utils.ts": "tilt",
     "*.validator.ts": "velite"
   },
-  "workbench.colorCustomizations": {
-    "activityBar.activeBorder": "#E90464",
-    "commandCenter.activeBorder": "#E90464",
-    "commandCenter.inactiveBorder": "#E90464",
-    "editorCursor.foreground": "#E90464",
+	"workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#00AA00",
+    "commandCenter.activeBorder": "#00AA00",
+    "commandCenter.inactiveBorder": "#00AA00",
+    "editorCursor.foreground": "#00AA00",
     "editorError.foreground": "#00aaff",
     "editorWarning.foreground": "#00ffff",
-    "focusBorder": "#E90464",
-    "inlineChat.border": "#E90464",
-    "panel.border": "#E90464",
-    "sideBar.border": "#E90464",
-    "statusBar.border": "#E90464",
-    "tab.activeBorder": "#E90464",
-    "tab.activeBorderTop": "#E90464",
-    "terminalCursor.foreground": "#E90464",
-    "tree.indentGuidesStroke": "#E90464",
-    "widget.border": "#E90464"
-  }
+    "focusBorder": "#00AA00",
+    "inlineChat.border": "#00AA00",
+    "panel.border": "#00AA00",
+    "sideBar.border": "#00AA00",
+    "statusBar.border": "#00AA00",
+    "tab.activeBorder": "#00AA00",
+    "tab.activeBorderTop": "#00AA00",
+    "terminalCursor.foreground": "#00AA00",
+    "tree.indentGuidesStroke": "#00AA00",
+    "widget.border": "#00AA00"
+  },
 }
