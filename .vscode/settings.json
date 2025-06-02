@@ -1,0 +1,76 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "always",
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  },
+  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.folders.associations": {
+    ".ai": "robot",
+    "architect": "godot",
+    "builder": "godot",
+    "craftsman": "godot",
+    "file": "meta",
+    "http": "api",
+    "prompts": "robot",
+    "domain": "cobol",
+    "system": "stack"
+  },
+  "material-icon-theme.files.associations": {
+    "*.blueprint.md": "apiblueprint",
+    "*.instructions.md": "twine",
+    "*.tracker.md": "verified",
+    "*.plan.md": "architecture",
+    "*.prompt.md": "pascal",
+    "*.template.md": "textlint",
+    "*.adapter.ts": "adonis",
+    "*.builder.ts": "unocss",
+    "*.command.ts": "console",
+    "*.config.ts": "tune",
+    "*.component.ts": "angular-component",
+    "*.decorator.ts": "renovate",
+    "*.dto.ts": "raml",
+    "*.facade.ts": "mjml",
+    "*.factory.ts": "fortran",
+    "*.form.ts": "angular-component",
+    "*.functions.ts": "url",
+    "*.gateway.ts": "ifanr-cloud",
+    "*.interface.ts": "raml",
+    "*.mapper.ts": "purescript",
+    "*.module.ts": "less",
+    "*.operations.ts": "url",
+    "*.page.ts": "angular-guard",
+    "*.singleton.ts": "stitches",
+    "*.repository.ts": "database",
+    "*.service.ts": "angular-service",
+    "*.store.ts": "angular-service",
+    "*.type.ts": "raml",
+    "*.utils.ts": "tilt",
+    "*.validator.ts": "velite"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#E90464",
+    "commandCenter.activeBorder": "#E90464",
+    "commandCenter.inactiveBorder": "#E90464",
+    "editorCursor.foreground": "#E90464",
+    "editorError.foreground": "#00aaff",
+    "editorWarning.foreground": "#00ffff",
+    "focusBorder": "#E90464",
+    "inlineChat.border": "#E90464",
+    "panel.border": "#E90464",
+    "sideBar.border": "#E90464",
+    "statusBar.border": "#E90464",
+    "tab.activeBorder": "#E90464",
+    "tab.activeBorderTop": "#E90464",
+    "terminalCursor.foreground": "#E90464",
+    "tree.indentGuidesStroke": "#E90464",
+    "widget.border": "#E90464"
+  }
+}

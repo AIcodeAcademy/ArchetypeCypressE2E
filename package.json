@@ -1,0 +1,17 @@
+{
+	"name": "archetype-cypress-e2e",
+	"version": "1.0.0",
+	"description": "Cypress E2E Archetype",
+	"scripts": {},
+	"keywords": [],
+	"author": {
+		"name": "Alberto Basalo",
+		"company": "AI code Academy",
+		"website": "https://aicode.academy",
+		"email": "albertobasalo@aicode.academy"
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^3.5.3"
+	}
+}
