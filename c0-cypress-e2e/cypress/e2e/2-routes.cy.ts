@@ -1,0 +1,53 @@
+// * Variables, hooks, logs and functions
+
+/**
+ * The Application navigation links
+ *   should have a link to the repository page
+ *   should have a header link with 'activities' text
+ *   should have a 'loginLink' id
+ *   should navigate to the register page
+ *   should not have broken links
+ */
+describe("The Application navigation links", () => {
+  const repoHref = "https://github.com/AIcodeAcademy/ArchetypeAngularSPA";
+  const registerHref = "/user/register";
+  const registerUrl = "http://localhost:4200/user/register";
+  before(() => {
+    cy.log("1️⃣ Before ALL");
+  });
+  beforeEach(() => {
+    cy.log("2️⃣ Before Each ");
+    cy.visit("");
+  });
+  it("should have a link to the repository page", () => {
+    cy.get(`a[href='${repoHref}']`); // Act Assert
+  });
+  it("should have a header link with 'register' text", () => {
+    cy.get("header a") // Act
+      .contains("register", { matchCase: false }); // Assert
+  });
+  it("should have a 'registerLink' id", () => {
+    cy.get(`a[href='${registerHref}']`); // Act Assert
+  });
+  it("should navigate to the register page", () => {
+    cy.get(`a[href='${registerHref}']`) // Arrange
+      .click(); // Act
+    cy.log("🔁 Navigating to register page");
+    cy.url() // Act
+      .should("eq", registerUrl); // Assert
+  });
+  it("should not have broken links", () => {
+    cy.get("a") // Arrange
+      .each(
+        (
+          a // Iterate
+        ) => cy.request(a.prop("href")) // Act Assert
+      );
+  });
+  afterEach(() => {
+    cy.log("3️⃣ After Each");
+  });
+  after(() => {
+    cy.log("4️⃣ After ALL");
+  });
+});
