@@ -5,7 +5,6 @@
  *   When the data is loaded
  *    Then should display the Net value
  */
-
 describe("Given the Portfolio Home page", () => {
   beforeEach(() => {
     cy.visit("/");
