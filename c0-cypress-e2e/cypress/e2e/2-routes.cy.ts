@@ -11,7 +11,7 @@
 describe("The Application navigation links", () => {
   const repoHref = "https://github.com/AIcodeAcademy/ArchetypeAngularSPA";
   const registerHref = "/user/register";
-  const registerUrl = "http://localhost:4200/user/register";
+  const registerUrl = "http://localhost:4200" + registerHref;
   before(() => {
     cy.log("1️⃣ Before ALL");
   });

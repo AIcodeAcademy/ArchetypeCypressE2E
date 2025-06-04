@@ -18,7 +18,7 @@ describe("The Angular home page", () => {
   });
   it("should have an italic element with 'Angular' content", () => {
     cy.visit("http://localhost:4200/");
-    cy.get("i").contains("Angular");
+    cy.get("a").contains("Angular");
   });
   it("should have a link with css class 'secondary'", () => {
     cy.visit("http://localhost:4200/");

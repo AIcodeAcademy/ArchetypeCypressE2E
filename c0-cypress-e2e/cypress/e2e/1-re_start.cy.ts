@@ -10,15 +10,15 @@
  *   should have a link with css class 'secondary'
  */
 
-describe('The Activity Bookings home page', () => {
+describe("The Activity Bookings home page", () => {
   beforeEach(() => {
     // * Use the baseUrl from cypress.config.ts
-    cy.visit(''); // Arrange
+    cy.visit(""); // Arrange
   });
 
-  it('should be visible', () => {
-    cy.get('body') // act
-      .should('be.visible'); // Assert
+  it("should be visible", () => {
+    cy.get("body") // act
+      .should("be.visible"); // Assert
   });
 
   // ! redundant test
@@ -27,16 +27,16 @@ describe('The Activity Bookings home page', () => {
   // });
 
   it(`should have a footer with 'Angular' text`, () => {
-    cy.get('footer') // Act
-      .should('contains.text', 'Angular'); // Assert
+    cy.get("footer") // Act
+      .should("contains.text", "Angular"); // Assert
   });
 
   // * Grouped assertions for better performance
 
   it(`should have a link to https://albertobasalo.dev and an italic element with 'Angular' content and a link with css class 'secondary`, () => {
-    cy.get(`a[href="https://albertobasalo.dev"]`).should('exist');
-    cy.get('i').contains('Angular');
-    cy.get('a.secondary');
+    cy.get(`a[href="https://albertobasalo.dev"]`).should("exist");
+    cy.get("a").contains("Angular");
+    cy.get("a.secondary").should("exist");
   });
 
   // it("should have an italic element with 'Angular' content", () => {

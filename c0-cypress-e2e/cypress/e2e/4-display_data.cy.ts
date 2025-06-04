@@ -16,7 +16,7 @@ describe("Given The Application page", () => {
     it("Then should not display a busy message Nor an error message And should display the data", () => {
       cy.get('[aria-busy="true"]').should("not.exist");
       cy.get('[aria-invalid="true"]').should("not.exist");
-      cy.get("pre").should("exist");
+      cy.get("table").should("exist");
     });
   });
 });
