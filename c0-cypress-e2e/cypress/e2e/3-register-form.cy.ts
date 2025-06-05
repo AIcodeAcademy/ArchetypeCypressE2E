@@ -26,7 +26,7 @@ describe("The register form", () => {
   beforeEach(() => {
     cy.visit(signUpUrl);
   });
-  it("should have a form with 4 clean inputs and a submit button disabled", () => {
+  it("should have a form with 5 clean inputs and a submit button disabled", () => {
     cy.get("form") // search from the root
       .find("fieldset") // search from the last found element
       .find("input") // also traces the selector path
