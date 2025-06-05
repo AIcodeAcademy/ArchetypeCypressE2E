@@ -24,6 +24,8 @@
     "system": "stack"
   },
   "material-icon-theme.files.associations": {
+    "*.cypress.ts": "cypress",
+    "*.cypress.config.ts": "cypress",
     "*.blueprint.md": "apiblueprint",
     "*.instructions.md": "twine",
     "*.tracker.md": "verified",

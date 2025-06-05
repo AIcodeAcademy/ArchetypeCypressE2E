@@ -7,7 +7,9 @@ export default defineConfig({
     },
     baseUrl: "http://localhost:4200",
     defaultCommandTimeout: 2000,
-    viewportHeight: 1080,
-    viewportWidth: 1920,
+    video: true,
+    screenshotOnRunFailure: false,
+
+    // specPattern: "cypress/e2e/1-*/**/*",
   },
 });

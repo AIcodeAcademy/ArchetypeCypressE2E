@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "cypress open --e2e --browser chrome",
-    "test": "cypress run"
+    "test": "cypress run",
+    "test:q": "cypress run -q",
+    "test:s": "cypress run -s 'cypress/e2e/1-*/**/*'",
+    "test:prod": "cypress run -q --config-file prod.cypress.config.ts"
   },
   "keywords": [],
   "author": "",
