@@ -13,7 +13,7 @@ describe("Given the app home with an empty portfolio", () => {
     cy.createPortfolio(1000, "Test Portfolio");
   });
   it("should navigate to the asset form page", () => {
-    cy.get("button").contains("Add New Asset").click();
-    cy.url().should("include", "/assets/new");
+    cy.get("a").contains("Add new asset").click();
+    cy.url().should("include", "/assets/buy");
   });
 });

@@ -1,6 +1,6 @@
 /**
  * Given The Application page with no data
- *  When IP API server is available
+ *  When API server is available
  *   Then should display a form to create a new portfolio
  */
 describe("Given The Application page with no data", () => {
