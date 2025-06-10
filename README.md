@@ -6,7 +6,10 @@ Based on the [AIDDbot](https://github.com/AIcodeAcademy/AIDDbot) project.
 
 Repository: [AI code Academy / archetype cypress e2e](https://github.com/AIcodeAcademy/ArchetypeCypressE2E)
 
-SUT: [AI code Academy / archetype angular spa](https://github.com/AIcodeAcademy/ArchetypeAngularSPA)
+## Subject Under Test:
+
+- Frontend Web application : [AI code Academy / archetype angular spa](https://github.com/AIcodeAcademy/ArchetypeAngularSPA)
+- API Rest Server: [Express API/ branch assets board](https://github.com/AIcodeAcademy/ArchetypeExpressAPI/tree/assets-board)
 
 AI instructions, prompts and rules: [.ai/](.ai/)
 
