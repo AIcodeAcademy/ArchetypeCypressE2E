@@ -9,5 +9,8 @@ export default defineConfig({
     defaultCommandTimeout: 2000,
     viewportHeight: 1080,
     viewportWidth: 1920,
+    env: {
+      API_URL: "http://localhost:3000",
+    },
   },
 });

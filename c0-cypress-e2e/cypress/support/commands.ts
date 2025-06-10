@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -35,3 +36,17 @@
 //     }
 //   }
 // }
+
+import { createPortfolio, deleteAllPortfolios } from "./portfolio.command";
+// export {};
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      createPortfolio(initialCash: number, name: string): Chainable<void>;
+      deleteAllPortfolios(): Chainable<void>;
+    }
+  }
+}
+Cypress.Commands.add("createPortfolio", createPortfolio);
+Cypress.Commands.add("deleteAllPortfolios", deleteAllPortfolios);
