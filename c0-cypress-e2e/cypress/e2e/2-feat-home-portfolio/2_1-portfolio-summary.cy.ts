@@ -11,7 +11,7 @@ describe("Given the Portfolio Home page", () => {
   });
   it("should display the Net value", () => {
     // alias
-    cy.get("header dl").as("headSummary");
+    cy.get("article header dl").as("headSummary");
     cy.get("@headSummary").children().first().as("netValue");
     cy.get("@netValue").contains("Net");
     cy.get("@netValue").siblings("dd").as("netValueAmount");

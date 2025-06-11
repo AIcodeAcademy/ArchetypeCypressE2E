@@ -16,7 +16,7 @@ describe("Given the a adding a new asset", () => {
     it("should navigate to the asset form page", () => {
       const buyAssetPo = new BuyAssetPo();
       buyAssetPo.selectSymbol("MSFT");
-      //buyAssetPo.inputSymbol.type("Microsoft");
+      // buyAssetPo.inputSymbol.type("Microsoft");
       // buyAssetPo.inputSymbol.clear().type("10");
       buyAssetPo.typeUnits(1);
       buyAssetPo.clickButton();

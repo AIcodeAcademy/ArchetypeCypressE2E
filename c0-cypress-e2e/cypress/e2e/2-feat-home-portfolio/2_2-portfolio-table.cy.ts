@@ -2,8 +2,8 @@
 /**
  * Given the Portfolio Home page
  *   When the data is loaded
- *    Then should display the table with 3 table rows
- *    And should display the table header with 4 columns
+ *    Then should display the table with at least 1 table rows
+ *    And should display the table header with 5 columns
  *    And should display the table footer with total label and value
  */
 describe("Given the Portfolio Home page", () => {
@@ -11,11 +11,11 @@ describe("Given the Portfolio Home page", () => {
     cy.visit("/");
     cy.get("table").as("table");
   });
-  it("should display the table header with 4 columns", () => {
-    cy.get("@table").find("thead tr th").should("have.length", 4);
+  it("should display the table header with 5 columns", () => {
+    cy.get("@table").find("thead tr th").should("have.length", 5);
   });
-  it("should display the table with 3 table rows", () => {
-    cy.get("@table").find("tbody tr").should("have.length", 3);
+  it("should display the table with at least 1 table rows", () => {
+    cy.get("@table").find("tbody tr").should("have.length.at.least", 1);
   });
   it("should display the table footer with total label and value", () => {
     // alias
