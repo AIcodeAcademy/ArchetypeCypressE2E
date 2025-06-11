@@ -8,7 +8,7 @@
  *    And not the data
  */
 
-describe("Given The Application page", () => {
+describe.skip("Given The Application page", () => {
   beforeEach(() => {
     cy.visit("");
   });

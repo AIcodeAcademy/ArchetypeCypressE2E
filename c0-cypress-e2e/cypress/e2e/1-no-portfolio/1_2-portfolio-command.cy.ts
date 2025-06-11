@@ -10,7 +10,7 @@ describe("Given the app home is visited", () => {
   });
   it("should display a portfolio summary", () => {
     cy.createPortfolio(1000, "Test Portfolio");
-    cy.get("header dl").as("headSummary");
+    cy.get("article header dl").as("headSummary");
     cy.get("@headSummary").find("dd").first().contains("$1,000.00");
   });
 });

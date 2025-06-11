@@ -14,7 +14,7 @@ describe("Given the create portfolio form", () => {
     cy.get("@form").find("input[name='initial_cash']").clear().type("1000");
     cy.get("@form").find("input[name='name']").clear().type("Test Portfolio");
     cy.get("@form").find("button").contains("Create").click();
-    cy.get("header dl").as("headSummary");
+    cy.get("article header dl").as("headSummary");
     cy.get("@headSummary").find("dd").first().contains("$1,000.00");
   });
 });
