@@ -12,7 +12,9 @@ describe("Given the Portfolio Home page", () => {
   });
   it("should call the portfolios get endpoint", () => {
     const apiUrl = Cypress.env("API_URL");
-    cy.intercept("GET", `${apiUrl}/portfolios`).as("getPortfolio");
+    cy.intercept("GET", `${apiUrl}/portfolios`)
+      .as("getPortfolio")
+      .should("be.calledOnce");
     cy.wait("@getPortfolio");
   });
   context("When create a new portfolio", () => {
